@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+<center>
+    <div>
+        <div class="main">
+            <div class="card">
+                <img src="boy.png">
+                <h2> KAUSHAL SHARMA ALIGARH </h2>
+                <P>BASE COMPUTER</P>
+            </div>
+            <div class="table-wrapper">
+                <table class="fl-table">
+                    <thead>
+                    <tr>
+                        <th>PRODUCTS</th>
+                        <th>ORDER QTY.</th>
+                        <th>DISPACH QUANTITY</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+
+                        <td> ALDROP 10" SS<img class="tab" src="boy.png"></td>
+                        <td>100 PAIR</td>
+                        <td>REMARK</td>
+                    </tr>
+                    <tr>
+                        <td>ML007 CLOCK 10"<img class="tab" src="boy.png"></td>
+                        <td>200 PCS</td>
+                        <td>REMARK</td>
+                    </tr>
+                    <tr>
+                        <td>P001 PULL HANDLE 8"<img class="tab" src="boy.png"></td>
+                        <td>400 PAIR</td>
+                        <td>REMARK</td>
+                    </tr>
+                    <tr>
+                        <td>K1208 KHUNTI 12 POINT SS</td>
+                        <td>300 PCS</td>
+                        <td>REMARK</td>
+                    </tr>
+                    <tr>
+                        <td>A9001 ALDROP 10" SS</td>
+                        <td>100 PAIR</td>
+                        <td>REMARK</td>
+                    </tr>
+                    <tr>
+                        <td>P001 PULL HANDLE 8"</td>
+                        <td>200 PCS.</td>
+                        <td>REMARK</td>
+                    </tr>
+                    <tr>
+                        <td>A9001 ALDROP 10" SS</td>
+                        <td>100 PAIR</td>
+                        <td>REMARK</td>
+                    </tr>
+                    <tr>
+                        <td>ML007 MULTI CLOCK 10"</td>
+                        <td>200 PCS</td>
+                        <td>REMARK</td>
+                    </tr>
+                    <tr>
+                        <td>P001 PULL HANDLE 8"</td>
+                        <td>400 PAIR</td>
+                        <td>REMARK</td>
+                    </tr>
+                    <tr>
+                        <td>K1208 KHUNTI 12 POINT SS</td>
+                        <td>300 PCS</td>
+                        <td>REMARK</td>
+                    </tr>
+                    <tr>
+                        <td>A9001 ALDROP 10" SS</td>
+                        <td>100 PAIR</td>
+                        <td>REMARK</td>
+                    </tr>
+                    <tr>
+                        <td>P001 PULL HANDLE 8"</td>
+                        <td>200 PCS.</td>
+                        <td>REMARK</td>
+                    </tr>
+                    <tbody>
+                </table>
+            </div>
+            <br>
+            <button onclick="window.location.href='costumerlist.html'">COMPLETE</button>
+            <button onclick="share()">SHARE</button>
+        </div>
+    </div>
+    <script>
+        function share() {
+			// Check if the share API is supported
+			if (navigator.share) {
+				// Get the current page URL
+				var url = window.location.href;
+
+				// Call the share API
+				navigator.share({
+					title: document.title,
+					url: url
+				})
+				.then(() => {
+					console.log('Shared successfully!');
+				})
+				.catch((error) => {
+					console.log('Error sharing:', error);
+				});
+			} else {
+				// Fallback for browsers that don't support the share API
+				alert('Your browser does not support the share API.');
+			}
+		}
+    </script>
+</center>
+</body>
+</html>

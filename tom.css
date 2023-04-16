@@ -1,0 +1,122 @@
+/* Styles for the form */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4070f4;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.2s ease-in-out;
+    width: 100%;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #0066cc;
+  }
+
+  h1{
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+  }
+  h1::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 90px;
+    border-radius: 12px;
+    background: #4070f4;
+  }
+  
+  .btn {
+    background-color: #0066cc;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    align-content: center;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    margin-left: 220px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #0052b3;
+  }
+ /* CSS styling for the product list */
+ .product-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  
+  .product-card img {
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    position: absolute;
+  }
+  
+  .product-card h2 {
+    margin-top: 15;
+    margin-bottom: 10px;
+    margin-left: 150px;
+  }
+  
+  .product-card p {
+    
+    margin-top: 15;
+    margin-bottom: 10px;
+    margin-left: 150px;
+  }  

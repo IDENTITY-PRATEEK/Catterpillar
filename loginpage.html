@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<title> Registration or Sign Up form in HTML CSS | CodingLab </title>-->
+    <link rel="stylesheet" href="signup.css">
+   </head>
+<body>
+  <div class="wrapper">
+    <h2>Supplier Registration</h2>
+    <form action="#">
+      <div class="input-box">
+        <input type="text" placeholder="GSTIN" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Company Name" required>
+      </div>
+      <div class="input-box">
+        <input type="input-box" placeholder="Full Name" required>
+      </div>
+      <div class="input-box">
+        <input type="tel" placeholder="Mobile No." required>
+      </div>
+      <div class="input-box">
+        <input type="Number" placeholder="Supplier Code" required>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Enter Password" required>
+      </div>
+      <div class="menu">
+        <label for="plan"> Select Plan: </label><br>
+        <select id = "plan" name="plan" size="1">
+          <option value="15 days">15 Day's Free</option>
+          <option value="gold">Gold Catalog</option>
+          <option value="diamond">Diamond Catalog</option>
+        </select>
+      </div>
+      <br>
+      <div class="policy">
+        <input type="checkbox">
+        <h3>I accept all terms & condition</h3>
+      </div>
+      <div class="input-box button">
+        <input type="Submit" value="Register Now">
+      </div>
+      <div class="text">
+        <h3>Already have an account? <a href="Suplierlogin.html">Login now</a></h3>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
